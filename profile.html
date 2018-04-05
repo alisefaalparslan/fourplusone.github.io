@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Fontawesome css-->
+    <link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
+
+        <!-- Roboto Font-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+            <!-- Ubuntu Font -->
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu" rel="stylesheet"> 
+
+
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="css/bootstrap.css">
+
+                    <!-- Style CSS -->
+                    <link rel="stylesheet" href="css/style.css">
+
+                        <!-- profile CSS -->
+                        <link rel="stylesheet" href="css/profile.css">
+
+                            <title>4+1 Sport Center</title>
+                            </head>
+                            <body  class="bg">
+                                <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                                    <div class="container">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <a href="member.html" class="navbar-brand"><img src="images/logo.png" width="40" height="40" class="d-inline-block align-top">
+                                                4+1 Sport Center</a>
+                                        <div class="collapse navbar-collapse" id="nvbCollapse">
+                                            <ul class="navbar-nav mx-auto">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="member.html">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">About Us</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="schedule.html">Schedule</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Contact</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Profile</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="index.html">Logout</a>
+                                                </li>
+
+                                            </ul>
+                                            <form class="form-inline my-2 my-lg-0">
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                                            </form>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </nav>
+
+                            <section id="user">
+                                <form action = "profile.jsp" class="container" method="POST">
+                                    <div class="row mt-5">
+                                        <div class="col-md-6 text-center">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <div class="form-group ">
+                                                <label class="col-md-8 control-label" for="FullName">Full Name</label>
+                                 
+                                                <div class="col-md-8">
+                                                    <div class="input-group">
+                                                        <input type ="text" class="form-control" id="FullName" name="nameSurname"  value= "" >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group ">
+                                                <label class="col-md-8 control-label" for="Username">Username</label>  
+                                                <div class="col-md-8">
+                                                    <div class="input-group">
+                                                        <output class="form-control" id="Username" name="username" ></output>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- File Button --> 
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="Uploadphoto">Upload photo</label>
+                                                <div class="col-md-8">
+                                                    <input id="Uploadphoto" name="Uploadphoto" class="input-file" type="file">
+                                                </div>
+                                            </div>
+
+                                            <!-- Multiple Radios (inline) -->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="Gender">Gender</label>
+                                                <div class="col-md-8"> 
+                                                    <label class="radio-inline" for="Gender-0">
+                                                        <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked">
+                                                            Male
+                                                    </label> 
+                                                    <label class="radio-inline" for="Gender-1">
+                                                        <input type="radio" name="Gender" id="Gender-1" value="2">
+                                                            Female
+                                                    </label> 
+                                                    <label class="radio-inline" for="Gender-2">
+                                                        <input type="radio" name="Gender" id="Gender-2" value="3">
+                                                            Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="EmailAddress">Email Address</label>  
+                                                <div class="col-md-8">
+                                                    <div class="input-group">
+                                                        <input  type="text" id="EmailAddress" name="email" value="" class="form-control input-md">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="form-group">
+                                                <label class="col-md-8 control-label" for="PhoneNo">Phone Number</label>  
+                                                <div class="col-md-8">
+                                                    <div class="input-group">
+                                                        <input id="phoneno" name="phoneNumber" type="text" value="" class="form-control input-md">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" ></label>  
+                                                <div class="col-md-4">
+                                                    <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</a>
+                                                    <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span> Clear</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>  
+
+                                </form>  
+                            </section>
+
+
+
+
+                            <!-- Optional JavaScript -->
+                            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                            <script src="js/jquery-3.3.1.js"></script>
+                            <script src="js/popper.min.js"></script>
+                            <script type="text/javascript" src="js/bootstrap.js"></script>
+
+                            </body>
+                            </html>

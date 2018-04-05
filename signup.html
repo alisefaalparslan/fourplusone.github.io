@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Fontawesome css-->
+    <link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
+      
+    <!-- Roboto Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    
+    <!-- Ubuntu Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu" rel="stylesheet"> 
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+      
+    <!-- Sign Up CSS -->
+    <link rel="stylesheet" href="css/signuppage.css">
+
+    <title>4+1 Sport Center</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="images/logo.png" width="40" height="40" class="d-inline-block align-top">
+                    4+1 Sport Center</a>
+            <div class="collapse navbar-collapse" id="nvbCollapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+  
+            
+            </div>
+
+        </div>
+      
+    </nav>
+      
+    <div class="container-fluid bg">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <form action="signup.jsp" class="form-container">
+              <h1>4+1 Sign Up</h1>
+              <div class="form-group">
+                <label for="validationCustom01">Full Name</label>
+                <input type="text" class="form-control" name="nameSurname" placeholder="Full Name" required>
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                </div>
+                <input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword5">Password</label>
+                <input type="password" class="form-control" name="password" aria-describedby="passwordHelpBlock" required>
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+                <div class="invalid-feedback">
+                    Please enter the appropriate password.
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="inputPassword5">Confirm Password</label>
+                  <input type="password" class="form-control" name="confirmpass" placeholder="Password" required>
+                  <div class="invalid-feedback">
+                    Passwords are not equal.
+                  </div>                
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Email Address</label>
+                  <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  <div class="invalid-feedback">
+                    Please provide a email adress.
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="validationCustom01">Phone Number</label>
+                <input type="text" class="form-control" name="phoneNumber" placeholder="05xxxxxxxxx" required>
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+              </div>
+              <div class="form-group">
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                   Agree to terms and conditions
+                  </label>
+                 <div class="invalid-feedback">
+                   You must agree before submitting.
+                 </div>
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-success btn-block">Submit</button>
+        </form>
+          
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+       </div>
+    </div>
+      
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+ </body>
+</html>
