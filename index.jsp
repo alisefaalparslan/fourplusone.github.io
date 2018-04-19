@@ -13,7 +13,7 @@
     <title>JSP Page</title>
 </head>
 <body>
-    <%
+    <%=
   deneme tc = new deneme();
   tc.firttry();
 %>
