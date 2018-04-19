@@ -13,7 +13,7 @@
     <title>JSP Page</title>
 </head>
 <body>
-    <jsp:useBean id="own" scope="session" class="dao.deneme" />
+    
     <h1>Hello World!</h1>
 </body>
 </html>
