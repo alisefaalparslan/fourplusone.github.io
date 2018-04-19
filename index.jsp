@@ -13,10 +13,6 @@
     <title>JSP Page</title>
 </head>
 <body>
-    <%=
-  deneme tc = new deneme();
-  tc.firttry();
-%>
     <jsp:useBean id="own" scope="session" class="dao.deneme" />
     <h1>Hello World!</h1>
 </body>
