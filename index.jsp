@@ -1,9 +1,4 @@
-<%-- 
-    Document   : a
-    Created on : 18.Nis.2018, 20:03:03
-    Author     : alisefa
---%>
-<%@page import="dao.deneme"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
